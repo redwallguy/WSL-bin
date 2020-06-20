@@ -8,6 +8,8 @@ board = sys.argv[1] #for board-specific downloading
 # Usage: Go to the directory you want to download the pinterest board into. Make sure there is an `env.json` file in it with the keys `PINTEREST_API_TOKEN`,
 # `PINTEREST_NEXT_URL`, and `PINTEREST_RATE_LIMIT_REMAINING`, with appropriate values. Then, assuming get-board.py is in your path, `get-board.py <boardname>`
 
+# At the moment, Pinterest API has limited requests to 1/hr
+
 token = ""
 next = None
 rate_limit = 0
